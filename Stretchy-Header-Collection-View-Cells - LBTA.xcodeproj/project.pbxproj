@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC3EE5E222664133007B1A74 /* StretchyHeaderLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3EE5E122664133007B1A74 /* StretchyHeaderLayout.swift */; };
 		AC82AD932264ED1A0065968E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC82AD922264ED1A0065968E /* AppDelegate.swift */; };
 		AC82AD952264ED1A0065968E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC82AD942264ED1A0065968E /* ViewController.swift */; };
 		AC82AD982264ED1A0065968E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC82AD962264ED1A0065968E /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC3EE5E122664133007B1A74 /* StretchyHeaderLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyHeaderLayout.swift; sourceTree = "<group>"; };
 		AC82AD8F2264ED1A0065968E /* Stretchy-Header-Collection-View-Cells - LBTA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stretchy-Header-Collection-View-Cells - LBTA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC82AD922264ED1A0065968E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC82AD942264ED1A0065968E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC3EE5E022664107007B1A74 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				AC3EE5E122664133007B1A74 /* StretchyHeaderLayout.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
 		AC82AD862264ED1A0065968E = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +70,7 @@
 		AC82AD912264ED1A0065968E /* Stretchy-Header-Collection-View-Cells - LBTA */ = {
 			isa = PBXGroup;
 			children = (
+				AC3EE5E022664107007B1A74 /* Custom */,
 				AC82AD922264ED1A0065968E /* AppDelegate.swift */,
 				AC82AD942264ED1A0065968E /* ViewController.swift */,
 				AC82AD962264ED1A0065968E /* Main.storyboard */,
@@ -144,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC3EE5E222664133007B1A74 /* StretchyHeaderLayout.swift in Sources */,
 				AC82ADA52264EEBB0065968E /* StretchyHeaderController.swift in Sources */,
 				AC82AD952264ED1A0065968E /* ViewController.swift in Sources */,
 				AC82ADA9226504CD0065968E /* UIView+Extens.swift in Sources */,
