@@ -10,6 +10,8 @@ import UIKit
 
 class StretchyHeaderController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
+    var headerView: HeaderView!
+    
     struct Storyboard {
         static let reuseID = "reuseID"
         static let headerID = "headerID"
@@ -37,9 +39,20 @@ class StretchyHeaderController: UICollectionViewController, UICollectionViewDele
         }
     }
     
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let contentOffSet = scrollView.contentOffset.y
+        
+        if contentOffSet > 0 {
+            headerView.animation.fractionComplete = 0
+            return
+        }
+        
+        headerView?.animation.fractionComplete = abs(contentOffSet) / 100
+    }
+    
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: Storyboard.headerID, for: indexPath)
-        return header
+        headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: Storyboard.headerID, for: indexPath) as? HeaderView
+        return headerView!
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
